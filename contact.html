@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link href="styles/resturantStyles.css" rel="stylesheet" type="text/css" />
+
+  <title>Contact Us</title>
+
+  <style>
+    label,
+    fieldset {
+      font-size: 1.1em;
+
+    }
+
+    input[type=text] {
+      border: 2px solid #0d1f2d;
+      width: 50%;
+      padding: 8px 8px;
+      margin: 12px 0;
+      box-sizing: border-box;
+      font-size: 1.1em;
+    }
+
+    fieldset {
+      background-color: #ffffff;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 12px 0;
+      box-sizing: border-box;
+    }
+
+    select,
+    textarea {
+      margin: 12px 0;
+      font-size: 1em;
+    }
+
+    input[type=submit] {
+      font-size: 1.2em;
+      background-color: #546a7b;
+      color: #fef9ff;
+      padding: 4px 8px;
+    }
+
+    input[type=submit]:hover {
+      background-color: #f2eded;
+      color: #546a7b;
+    }
+
+    textarea {
+      width: 100%;
+      height: 200px;
+      padding: 12px 20px;
+      margin: 12px 0;
+      box-sizing: border-box;
+      border: 2px solid #0d1f2d;
+      border-radius: 3px;
+      background-color: #fff;
+      resize: none;
+    }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 style="text-align: center;">The Snack Shack</h1>
+  </header>
+
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact Us</a>
+
+
+
+
+
+  </nav>
+
+
+
+  <center>
+    <form action="submit.html" method="POST"></form>
+    <label for="Name">Name:</label> <br />
+    <input type="text" id="Name" name="Name"> <br />
+
+    <label for="email">Email:</label><br />
+    <input type="text" id="email" name="email"> <br />
+    <label for="phone">Phone:</label><br />
+    <input type="text" id="phone" name="phone"> <br />
+    <label for="contact">Reason For Inquiry:</label><br />
+    <select id="contact" name="contact">
+      <option value="default" selected>--Select One--</option>
+      <option value="morning">Catering</option>
+      <option value="afternoon">Feedback</option>
+      <option value="evening">Private Party</option>
+      <option value="evening">Other</option>
+    </select>
+
+
+    <div>
+      <label for="more-info" id="more-info">Additional Information: </label>
+      <textarea name="more-info" id="more-info"></textarea>
+    </div>
+
+
+    <fieldset>
+      <legend>Have you been to the resturant?</legend><br />
+      <input type="radio" id="choice1" name="questionnaire" value="yes">
+      <label for="choice1">Yes</label><br />
+      <input type="radio" id="choice2" name="questionnaire" value="no">
+      <label for="choice2">No</label><br />
+    </fieldset>
+
+    <fieldset>
+      <legend>Whats the best time to reach you?</legend><br />
+      <input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
+      <label for="frontEnd">M</label><br />
+      <input type="checkbox" id="backEnd" name="interest" value="backEnd">
+      <label for="backEnd">T</label>
+      <input type="checkbox" id="database" name="interest" value="database">
+      <label for="database">W</label><br />
+      <input type="checkbox" id="frontEn" name="interest" value="frontEn">
+      <label for="frontEn">Th</label><br />
+      <input type="checkbox" id="backEn" name="interest" value="backEn">
+      <label for="backEnd">F</label>
+    </fieldset>
+    <div>
+      <input type="submit" id="submit" value="Send" />
+    </div>
+
+
+
+
+    <footer>
+      <article id="location-information">
+        <center>
+          <h2>3107 28TH AVE S, Minneapolis, MN, 55406</h2>
+        </center>
+        <center>
+          <h3>651-317-5288</h3>
+        </center>
+
+
+
+      </article>
+
+
+
+    </footer>
+
+    </header>
+    <center>
+
+
+
+
+
+</body>
+
+</html>

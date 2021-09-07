@@ -1,0 +1,143 @@
+/* Author: cody stewart
+date: 8-26-21 */
+body {
+  background-color: rgb(11, 37, 92);
+  font-family: arial, helvetica, sans-serif;
+  color: rgb(245, 245, 245) margin: 0 auto;
+  max-width: 1200px;
+  border-style: solid
+}
+
+header, footer {
+  background-color: rgb(12, 110, 175);
+  color: rgb(235, 235, 235);
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+nav {
+  margin-top: 4px;
+}
+
+nav a {
+  background-color: #5b7d87;
+  color: #fef9ff;
+  padding: 8px;
+  border: thin solid #0d1f2d;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 20px;
+  width: 100px;
+  float: left;
+}
+
+nav a:hover {
+  background-color: #fef9ff;
+  color: #5b7d87;
+  font-weight: bold;
+}
+
+nav a:active {
+  font-weight: initial;
+}
+
+nav a:visited {
+  color: #e4c3ad;
+}
+
+.carousel-wrapper {
+  height: 400px;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.arrow-prev {
+  left: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+  right: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .arrow, .light .arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+}
+
+/*Select every element*/
+[id^="item"] {
+  display: none;
+}
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');
+  background-size: cover;
+}
+
+.item-2 {
+  background: url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
+  background-size: cover;
+}
+
+.item-3 {
+  background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+  background-size: cover;
+}
+
+*:target~.item-1 {
+  opacity: 0;
+}
+
+#item-1:target~.item-1 {
+  opacity: 1;
+}
+
+#item-2:target~.item-2, #item-3:target~.item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+}
+
+#description {
+  text-align: center;
+}
