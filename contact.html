@@ -6,14 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link href="styles/resturantStyles.css" rel="stylesheet" type="text/css" />
-
   <title>Contact Us</title>
-
   <style>
     label,
     fieldset {
       font-size: 1.1em;
-
     }
 
     input[type=text] {
@@ -24,15 +21,6 @@
       box-sizing: border-box;
       font-size: 1.1em;
     }
-
-    fieldset {
-      background-color: #ffffff;
-      width: 100%;
-      padding: 12px 20px;
-      margin: 12px 0;
-      box-sizing: border-box;
-    }
-
     select,
     textarea {
       margin: 12px 0;
@@ -62,32 +50,20 @@
       background-color: #fff;
       resize: none;
     }
-
     }
   </style>
 </head>
 
 <body>
-
   <header>
     <h1 style="text-align: center;">The Snack Shack</h1>
   </header>
-
-
-  <nav>
+  <div><nav>
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
     <a href="contact.html">Contact Us</a>
+  </nav></div>
 
-
-
-
-
-  </nav>
-
-
-
-  <center>
     <form action="submit.html" method="POST"></form>
     <label for="Name">Name:</label> <br />
     <input type="text" id="Name" name="Name"> <br />
@@ -104,23 +80,19 @@
       <option value="evening">Private Party</option>
       <option value="evening">Other</option>
     </select>
-
-
     <div>
       <label for="more-info" id="more-info">Additional Information: </label>
       <textarea name="more-info" id="more-info"></textarea>
     </div>
-
-
-    <fieldset>
+      <div>
       <legend>Have you been to the resturant?</legend><br />
       <input type="radio" id="choice1" name="questionnaire" value="yes">
       <label for="choice1">Yes</label><br />
       <input type="radio" id="choice2" name="questionnaire" value="no">
       <label for="choice2">No</label><br />
-    </fieldset>
+    </div>
 
-    <fieldset>
+<div>
       <legend>Whats the best time to reach you?</legend><br />
       <input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
       <label for="frontEnd">M</label><br />
@@ -132,38 +104,17 @@
       <label for="frontEn">Th</label><br />
       <input type="checkbox" id="backEn" name="interest" value="backEn">
       <label for="backEnd">F</label>
-    </fieldset>
+</div>
     <div>
       <input type="submit" id="submit" value="Send" />
     </div>
-
-
-
-
     <footer>
       <article id="location-information">
-        <center>
           <h2>3107 28TH AVE S, Minneapolis, MN, 55406</h2>
-        </center>
-        <center>
           <h3>651-317-5288</h3>
-        </center>
-
-
-
       </article>
-
-
-
     </footer>
-
     </header>
-    <center>
-
-
-
-
-
 </body>
 
 </html>

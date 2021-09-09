@@ -50,6 +50,9 @@ nav a:active {
 nav a:visited {
   color: #e4c3ad;
 }
+#description {
+  text-align: center;
+}
 
 .carousel-wrapper {
   height: 400px;
@@ -136,8 +139,4 @@ nav a:visited {
   z-index: 3;
   opacity: 1;
 }
-}
-
-#description {
-  text-align: center;
 }
